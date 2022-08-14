@@ -1,7 +1,7 @@
 # Journals Like a Script
 Allows GMs to embed links in journal entries that activate scenes and pull up the scene notes in a single click.
 
-# Because Your Game Is Scripted
+# Because Your Game is Scripted
 Make the flow of your game easier with this tiny mod. Journals Like a Script (JLAS) lets you embed clickable links into your journal entries that activate a scene and open the scene's notes. No more fumbling trying to find the right tab--just point and click when you hit the right spot in your story. JLAS makes your journal entries feel more like a movie script (you know, with actors and scenes and stuff, get it?) and saves you some time and hassle.
 
 # Installation and Setup
@@ -14,7 +14,7 @@ Either search for "Journals Like a Script" in Foundry's built-in module installa
 4. Change the `@Scene` portion of the link to `@ActivateScene`.
 5. When you save from edit mode, your link will be embedded in your journal entry. Try it out!
 
-# How it Works
+# How It Works
 JLAS extends the `TextEditor` class of Foundry without removing any of the editor's previous capability. JLAS modifies the `TextEditor`'s `enhanceHTML` function to also look for the `@ActivateScene{scene_id}[scene_name]` regular expression in addition the typical `@DocumentType{document_id}[document_name]` expression when it creates embedded links. JLAS then adds an `onClick` event listener to all the `@ActivateScene` embedded links. The `onClick` event handles activating and opening the notes for the scene.
 
 # A Sidenote About Compatibility
