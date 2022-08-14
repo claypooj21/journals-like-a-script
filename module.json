@@ -1,0 +1,23 @@
+{
+  "name": "journals-like-a-script",
+  "title": "Journals Like A Script",
+  "description": "Allows GMs to embed links that change the active scene and open the scene's notes with a single click.",
+  "authors": [
+    {
+      "name": "ReapersSoulmate"
+    }
+  ],
+  "version": "1",
+  "compatibility": {
+    "minimum": "9",
+    "verified": "9"
+  },
+  "minimumCoreVersion": "9",
+  "compatibleCoreVersion": "9",
+  "esmodules": [
+    "modules/jlas.js"
+  ],
+  "styles": [
+    "styles/jlas.css"
+  ]
+}
