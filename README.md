@@ -19,5 +19,8 @@ JLAS extends the `TextEditor` class of Foundry without removing any of the edito
 
 The `onClick` event JLAS creates looks for the `.jlas-activate-scene` CSS class to avoid conflicts with Foundry's existing `.entity-link` and `.content-link` classes. `.jlas-activate-scene` uses the same styling that those classes use, so it integrates seamlessly with Foundry's boilerplate style.
 
+# Conflicts
+Because JLAS inherits and extends Foundry's built-in TinyMCE, it will most likely conflict with any module or system that registers a different (or likewise extended) editor.
+
 # A Sidenote About Compatibility
 JLAS has been tested on Foundry VTT version 9 build 269. I don't intend to check that it's backwards-compatible with previous Foundry releases, but it very well may be. If you test it on a previous version of Foundry and it works, feel free to drop it in the issues module, or make a pull request with a manifest.json update.
