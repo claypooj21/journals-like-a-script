@@ -11,9 +11,7 @@ import { JLASTextEditor } from "./texteditor.mjs";
  */
 Hooks.once("init", async function() {
   console.log(`JLAS | Add Journals Like a Script functionality`);
-
-  CONFIG.debug.hooks = false;
-
+  
   // Register sheet application classes
   Handlebars.unregisterHelper("editor");
   Handlebars.registerHelper("editor", JLASHandlebarsHelpers.editor);
