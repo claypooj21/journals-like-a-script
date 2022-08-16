@@ -17,5 +17,7 @@ Either search for "Journals Like a Script" in Foundry's built-in module installa
 # How It Works
 JLAS extends the `TextEditor` class of Foundry without removing any of the editor's previous capability. JLAS modifies the `TextEditor`'s `enhanceHTML` function to also look for the `@ActivateScene{scene_id}[scene_name]` regular expression in addition the typical `@DocumentType{document_id}[document_name]` expression when it creates embedded links. JLAS then adds an `onClick` event listener to all the `@ActivateScene` embedded links. The `onClick` event handles activating and opening the notes for the scene.
 
+The `onClick` event JLAS creates looks for the `.jlas-activate-scene` CSS class to avoid conflicts with Foundry's existing `.entity-link` and `.content-link` classes. `.jlas-activate-scene` uses the same styling that those classes use, so it integrates seamlessly with Foundry's boilerplate style.
+
 # A Sidenote About Compatibility
 JLAS has been tested on Foundry VTT version 9 build 269. I don't intend to check that it's backwards-compatible with previous Foundry releases, but it very well may be. If you test it on a previous version of Foundry and it works, feel free to drop it in the issues module, or make a pull request with a manifest.json update.
