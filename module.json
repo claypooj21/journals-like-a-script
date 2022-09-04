@@ -1,21 +1,20 @@
 {
-  "name": "journals-like-a-script",
   "id": "journals-like-a-script",
+  "name": "journals-like-a-script",
   "title": "Journals Like A Script",
   "description": "Create embedded links that activate a scene.",
-  "author": "ReapersSoulmate",
   "authors": [
     {
-      "name": "ReapersSoulmate"
+      "name": "ReapersSoulmate",
+      "flags": {}
     }
   ],
-  "version": "1.0.0",
+  "version": "2.0.0",
   "compatibility": {
-    "minimum": "9.269",
-    "verified": "9.269"
+    "minimum": "10",
+    "verified": "10.284"
   },
-  "minimumCoreVersion": "9.269",
-  "compatibleCoreVersion": "9.269",
+  "minimumCoreVersion": "10",
   "esmodules": [
     "modules/jlas.js"
   ],
@@ -23,9 +22,9 @@
     "styles/jlas.css"
   ],
   "url": "https://github.com/claypooj21/journals-like-a-script",
-  "manifest": "https://github.com/claypooj21/journals-like-a-script/releases/download/v1.0.0/module.json",
-  "download": "https://github.com/claypooj21/journals-like-a-script/releases/download/v1.0.0/module.zip",
-  "license": "https://github.com/claypooj21/journals-like-a-script/releases/download/v1.0.0/LICENSE",
-  "readme": "https://github.com/claypooj21/journals-like-a-script/releases/download/v1.0.0/README.md",
+  "manifest": "https://github.com/claypooj21/journals-like-a-script/releases/download/v2.0.0/module.json",
+  "download": "https://github.com/claypooj21/journals-like-a-script/releases/download/v2.0.0/module.zip",
+  "license": "https://github.com/claypooj21/journals-like-a-script/releases/download/v2.0.0/LICENSE",
+  "readme": "https://github.com/claypooj21/journals-like-a-script/releases/download/v2.0.0/README.md",
   "bugs": "https://github.com/claypooj21/journals-like-a-script/issues"
 }
