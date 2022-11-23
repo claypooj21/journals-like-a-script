@@ -1,4 +1,4 @@
-a.jlas-activate-scene {
+a.jlas-activate-scene, a.jlas-view-scene {
   background: #DDD;
   padding: 1px 4px;
   border: 1px solid var(--color-border-dark-tertiary);
@@ -6,10 +6,10 @@ a.jlas-activate-scene {
   white-space: nowrap;
   word-break: break-all;
 }
-a.jlas-activate-scene i {
+a.jlas-activate-scene i, a.jlas-view-scene i {
   color: var(--color-text-dark-inactive);
 }
-a.jlas-activate-scene.broken {
+a.jlas-activate-scene.broken, a.jlas-view-scene.broken {
   background: rgba(255, 0, 0, 0.05);
   border: 1px dashed red;
 }
