@@ -8,7 +8,7 @@
       "flags": {}
     }
   ],
-  "version": "2.0.1",
+  "version": "2.1.0",
   "compatibility": {
     "minimum": "10",
     "verified": "10.290"
@@ -20,10 +20,10 @@
     "styles/jlas.css"
   ],
   "url": "https://github.com/claypooj21/journals-like-a-script",
-  "manifest": "https://github.com/claypooj21/journals-like-a-script/releases/download/v2.0.1/module.json",
-  "download": "https://github.com/claypooj21/journals-like-a-script/releases/download/v2.0.1/module.zip",
-  "license": "https://github.com/claypooj21/journals-like-a-script/releases/download/v2.0.1/LICENSE",
-  "readme": "https://github.com/claypooj21/journals-like-a-script/releases/download/v2.0.1/README.md",
-  "changelog": "https://github.com/claypooj21/journals-like-a-script/releases/download/v2.0.1/changelog.md",
+  "manifest": "https://github.com/claypooj21/journals-like-a-script/releases/download/v2.1.0/module.json",
+  "download": "https://github.com/claypooj21/journals-like-a-script/releases/download/v2.1.0/module.zip",
+  "license": "https://github.com/claypooj21/journals-like-a-script/releases/download/v2.1.0/LICENSE",
+  "readme": "https://github.com/claypooj21/journals-like-a-script/releases/download/v2.1.0/README.md",
+  "changelog": "https://github.com/claypooj21/journals-like-a-script/releases/download/v2.1.0/changelog.md",
   "bugs": "https://github.com/claypooj21/journals-like-a-script/issues"
 }

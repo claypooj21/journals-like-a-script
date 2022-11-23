@@ -1,4 +1,4 @@
-# 2.0.1
+# 2.1.0
 
 * Added UI warning for links that no longer exist.
 * view scenes instead of activating them by `ctrl + left click`

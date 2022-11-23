@@ -8,7 +8,7 @@ Make the flow of your game easier with this tiny mod. Journals Like a Script (JL
 Either search for "Journals Like a Script" in Foundry's built-in module installation dialog, clone the repo from github into your `FoundryVTT/Data/modules` directory, or download the release you want and unpack it into your `FoundryVTT/Data/modules` directory. Then, open a world, navigate to `Game Settings > Manage Modules` and make sure Journals Like a Script is checked. Let the game session reload, and you're all set!
 
 # How to Use It
-Functionality has expanded in JLAS v2.0.1! You can now embed `@ActivateScene` or `@ViewScene` links. Additionally, you can configure JLAS to limit what your players see when they read journal entries with `@ActivateScene` links.
+Functionality has expanded in JLAS v2.1.0! You can now embed `@ActivateScene` or `@ViewScene` links. Additionally, you can configure JLAS to limit what your players see when they read journal entries with `@ActivateScene` links.
 
 ## Embedding Activation Links
 1. Open or create a new journal entry.
@@ -27,7 +27,7 @@ Functionality has expanded in JLAS v2.0.1! You can now embed `@ActivateScene` or
 6. Click the link to view the scene and pull up the associated journal entry. NOTE: `ctrl + primary click` doesn't do anything special for `@ViewScene` links.
 
 ## Configuration Options
-With v2.0.1, you can now configure what your players (non-GM users) see when accessing journal entries with JLAS activation links.
+With v2.1.0, you can now configure what your players (non-GM users) see when accessing journal entries with JLAS activation links.
 
 ### `@ActivateScene` Link Visibility
 This setting is worldwide. It determines what non-GM users see from a JLAS `@ActivateScene` link; it doesn't affect `@ViewScene` links.
@@ -65,4 +65,4 @@ Because JLAS inherits and/or extends Foundry's built-in TinyMCE, it will most li
 # Sidenotes About Compatibility
 JLAS v1.0.0 was tested on Foundry VTT version 9 build 269. I don't intend to check that it's backwards-compatible with previous Foundry releases, but it very well may be. If you test it on a previous version of Foundry and it works, feel free to drop it in the issues module, or make a pull request with a manifest.json update.
 
-JLAS v2.0.0 will not work with versions of Foundry prior to 10.
+JLAS v2.0.0 and later will not work with versions of Foundry prior to 10.
