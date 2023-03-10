@@ -1,3 +1,7 @@
+# 2.1.1
+
+* Fixed a bug that would cause journal entries with broken links to show up as blank.
+
 # 2.1.0
 
 * Added UI warning for links that no longer exist.
