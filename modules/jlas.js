@@ -52,32 +52,33 @@ Hooks.once("init", async function() {
       dataset: {},
       name: name
     };
-    let broken = false;
     let doc_type = "Scene";
 
     // Get the linked Scene
     const config = CONFIG[doc_type];
     const collection = game.collections.get(doc_type);
     const doc = /^[a-zA-Z0-9]{16}$/.test(target) ? collection.get(target) : collection.getName(target);
-    if (!doc) broken = true;
 
-    // Check if the user has permissions to use this link. If not, determine
-    // how much of the link should show based on the settings.
-    if ( !doc.canUserModify(game.user, "update" ) && activate) {
-      const visibility = game.settings.get("journals-like-a-script","sceneLinkVisibility");
-      if(visibility == 1) return document.createTextNode(`${data.name}`);
-      if(visibility == 2) return document.createElement('wbr');
-    };
+    
+    if (!doc) {
+        // Update link data, and flag it as broken
+        data.name = data.name || target;
+        data.icon = "fas fa-unlink";
+        data.dataset = { type, entity: doc_type, id: null };
+        data.cls.push("broken");
+    } else {
+        // Check if the user has permissions to use this link. If not, determine
+        // how much of the link should show based on the settings.
+        if (!doc.canUserModify(game.user, "update") && activate) {
+            const visibility = game.settings.get("journals-like-a-script", "sceneLinkVisibility");
+            if (visibility == 1) return document.createTextNode(`${data.name}`);
+            if (visibility == 2) return document.createElement('wbr');
+        };
 
-    // Update link data
-    data.name = data.name || (broken ? target : doc.name);
-    data.icon = config.sidebarIcon;
-    data.dataset = {type, entity: doc_type, id: broken ? null : doc.id};
-
-    // Flag a link as broken
-    if (broken) {
-      data.icon = "fas fa-unlink";
-      data.cls.push("broken");
+        // Update link data
+        data.name = data.name || doc.name;
+        data.icon = config.sidebarIcon;
+        data.dataset = { type, entity: doc_type, id: doc.id };
     };
 
     // Construct the formed link
